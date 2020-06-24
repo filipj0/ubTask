@@ -1,0 +1,30 @@
+@import "src/styles"
+
+#home
+  text-align: center
+
+  .content-wrapper
+    position: relative
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    max-width: 90%
+
+    .title
+      color: $undabot-blue
+      font-size: 3em
+      z-index: 1
+
+    .logo
+      width: 50%
+      height: auto
+
+    .text
+      color: $undabot-blue
+      font-size: 2em
+      z-index: 1
+      margin-top: 2%
+
+@media (max-height: 490px)
+  .content-wrapper
+    top: 230px !important
