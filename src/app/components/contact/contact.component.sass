@@ -1,0 +1,84 @@
+@import "src/styles"
+
+#contactPage
+  .content-wrapper
+    form
+      left: 0
+      right: 0
+      margin: auto
+      width: 320px
+      position: relative
+
+      .form-control
+        position: relative
+        display: block
+        width: 100%
+
+        label
+          display: block
+          color: $undabot-blue
+          font-size: 2em
+          margin-bottom: 15px
+
+        input
+          display: block
+          color: $undabot-blue
+          font-size: 1.5em
+          margin-bottom: 15px
+          height: 40px
+          width: 100%
+          border: 1px solid $undabot-blue
+          border-radius: 5px
+          padding: 5px 10px 5px 10px
+
+          &::placeholder
+            color: $undabot-blue
+            opacity: 0.5
+            font-size: 0.8em
+
+          &:focus
+            outline: none
+            border: 3px solid $undabot-blue
+            margin-top: -4px
+
+      textarea
+        width: 100%
+        display: block
+        color: $undabot-blue
+        font-size: 1.5em
+        margin-bottom: 15px
+        border: 1px solid $undabot-blue
+        border-radius: 5px
+        padding: 5px 10px 5px 10px
+        max-height: 55vh
+        height: 80px
+
+        &:focus
+          outline: none
+          border: 3px solid $undabot-blue
+          margin-top: -4px
+
+      button
+        background-color: $undabot-blue
+        color: white
+        font-size: 2em
+        cursor: pointer
+        border-radius: 5px
+        border-color: transparent
+        margin-bottom: 15px
+      
+        &:hover
+          background-color: white
+          color: $undabot-blue
+
+      .user-msg
+        font-size: 1.5em
+        color: limegreen
+        position: absolute
+        bottom: -20px
+        height: 20px
+        overflow: visible
+
+        &.error
+          color: red
+      

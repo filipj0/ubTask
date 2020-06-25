@@ -1,6 +1,6 @@
 <div id="appWrapper">
   <div id="menu">
-    <a *ngFor="let item of menuItems" class="menu-item" [ngClass]="{'active': activeItemName === item.name}" (click)="activeItemName = item.name">{{item.name}}</a>
+    <a *ngFor="let item of menuItems" [routerLink]="item.route" class="menu-item" [ngClass]="{'active': activeItem === item.route}" (click)="activeItem = item.route">{{item.name}}</a>
   </div>
   <router-outlet></router-outlet>
 </div>

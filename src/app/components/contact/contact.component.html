@@ -1,0 +1,16 @@
+<div id="contactPage" class="page">
+    <div class="content-wrapper">
+        <form [formGroup]="form">
+            <div class="form-control">
+                <label for="emailInput">E-mail adresa:</label>
+                <input id="emailInput" type="text" formControlName="email" placeholder="Unesite e-mail adresu" autocomplete="off">
+            </div>
+            <div class="form-control">
+                <label for="messageInput">Poruka:</label>
+                <textarea id="messageInput" type="text" formControlName="message"></textarea>
+            </div>
+            <button type="submit" (click)="sendMessage()">Send</button>
+            <div class="user-msg" [ngClass]="{'error': userError}">{{userMessage}}</div>
+        </form>
+    </div>
+</div>
